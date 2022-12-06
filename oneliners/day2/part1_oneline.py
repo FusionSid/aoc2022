@@ -1,0 +1,1 @@
+with open("input.txt") as f: print("Answer:", sum(map(lambda game: {"X": {"A": 3, "B": 0, "C": 6}, "Y": {"A": 6, "B": 3, "C": 0}, "Z": {"A": 0, "B": 6, "C": 3},}[game[1]][game[0]] + list({"X": {"A": 3, "B": 0, "C": 6},"Y": {"A": 6, "B": 3, "C": 0},"Z": {"A": 0, "B": 6, "C": 3},}).index(game[1]) + 1, [i.split(" ") for i in f.read().strip().split("\n")])))

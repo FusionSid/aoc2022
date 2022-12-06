@@ -1,0 +1,1 @@
+with open("input.txt") as f: print("Answer:", sum(map(lambda x: ord(x) - 38 if x.isupper() else ord(x) - 96, [(set(rucksack[:len(rucksack) // 2]) & set(rucksack[len(rucksack) // 2:])).pop() for rucksack in f.read().strip().split("\n")])))

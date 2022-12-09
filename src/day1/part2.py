@@ -6,7 +6,7 @@ highest = [0 for _ in range(3)]  # makes changing number easier then 0,0,0
 
 for elf in elves:
     count = sum(map(int, elf))
-    for i in range(len(highest)): 
+    for i in range(len(highest)):
         if count > highest[i]:
             highest[i] = count
             break
